@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+</head>
+
+<body>
+
+	<div class="modal">
+		<div class="modal--top-line"></div>
+		<div class="modal--head">
+			<div class="modal--head--user">
+				<img src="./img/avatar.jpg" alt="">
+				<div>
+					<h5>Токсикова Ольга</h5>
+					<p>Днепропетровск</p>
+				</div>
+			</div>
+			<div class="modal--head--rating">
+				<input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+				<input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+				<input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+				<input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+				<input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+			</div>
+			<button class="modal--close">
+				<img src="./img/close.png" alt="">
+			</button>
+		</div>
+		<div class="modal--messages">
+			<div class="modal-message">
+				<img src="./img/avatar.jpg" alt="">
+				<div class="message-content">
+					<p>
+						Где взять на прокат вечернее красивое платье? А еще лучше дизайнерское! Предстоит участие в <a href="#">мероприятии</a>, где все гости будут наверняка одеты в наряды "от кутюр", а у меня со средствами туговато, да и жалко на один раз такие деньжищи
+						отваливать. Мне бы салон найти, где на прокат можно такой наряд взять. Поделитесь, пожалуйста, советами.
+					</p>
+					<span>вчера в 17.15</span>
+				</div>
+			</div>
+			<div class="modal-message message-sended">
+				<img src="./img/avatar2.jpg" alt="">
+				<div class="message-content">
+					<p>
+						Поисковик вам в помощь! Но цена примерно в половину стоимости платья.
+					</p>
+					<span>вчера в 18.45</span>
+				</div>
+			</div>
+			<div class="modal-message">
+				<img src="./img/avatar.jpg" alt="">
+				<div class="message-content">
+					<p>
+						Где взять на прокат вечернее красивое платье? А еще лучше дизайнерское! Предстоит участие в мероприятии, где все гости будут наверняка одеты в наряды "от кутюр", а у меня со средствами туговато
+					</p>
+					<span>вчера в 17.15</span>
+				</div>
+			</div>
+			<div class="modal-message message-sended">
+				<img src="./img/avatar2.jpg" alt="">
+				<div class="message-content">
+					<p>
+						Поисковик вам в помощь! Но цена примерно в половину стоимости платья.
+					</p>
+					<span>вчера в 18.45</span>
+				</div>
+			</div>
+		</div>
+		<div class="modal--input-area">
+			<div class="flex">
+				<img src="./img/avatar2.jpg" alt="">
+				<div>
+					<textarea name="name" rows="4"></textarea>
+					<button id="send-msg">Отправить</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<script src="js/index.js"></script>
+</body>
+
+</html>
