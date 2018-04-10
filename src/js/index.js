@@ -26,12 +26,11 @@ ta.addEventListener('keyup', (e) => {
 sendMessageBtn.addEventListener('click', (e) => {
 
     let messageText = document.querySelector('.modal--input-area textarea').value,
-        messageTimestamp = new Date().toLocaleString().split(',');
-    // console.log(messageText);
+        messageTimestamp = new Date().toLocaleString().split(' ');
 
     if (messageText.length > 0) {
         let newMessage = document.createElement('div');
-        newMessage.classList.add('modal-message', 'message-sended', 'new-message');
+        newMessage.classList.add('modal-message', 'message-sent', 'new-message');
         newMessage.innerHTML = `
         <img src="./img/avatar2.jpg" alt="">
             <div class="message-content">
@@ -41,7 +40,6 @@ sendMessageBtn.addEventListener('click', (e) => {
                 <span>${messageTimestamp[1]}</span>
             </div>
         `;
-        // console.log(newMessage);
         messageArea.appendChild(newMessage);
         document.querySelector('.modal--input-area textarea').value = '';
         ta.rows = 4;

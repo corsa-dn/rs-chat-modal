@@ -145,13 +145,14 @@ body {
 			}
 		}
 
-		.new-message{
-			animation-name: "sendedMessage";
-			animation-duration: 2s;
+		.new-message {
+			-webkit-animation: sendedMessage 2s;
+			-moz-animation: sendedMessage 2s;
+			-o-animation: sendedMessage 2s;
+			animation: sendedMessage 2s;
 		}
 
-		.message-sended {
-
+		.message-sent {
 			background-color: #f7f5f7;
 		}
 
@@ -216,6 +217,7 @@ body {
 		align-items: flex-end;
 		flex: 1 0 auto;
 		min-height: 125px;
+
 		.flex {
 			width: 100%;
 			align-items: flex-start;
@@ -242,6 +244,7 @@ body {
 				font-size: 14px;
 				resize: none;
 				overflow: hidden;
+
 				&+button {
 					margin-left: 15px;
 					border-radius: 3px;
